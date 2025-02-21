@@ -1,0 +1,32 @@
+.about {
+    &__title {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, #393939 0%, rgba(0,0,0,1) 70%);
+            z-index: -1;
+        }
+    }
+    &__info {
+        line-height: 1.5;
+    }
+    &__btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    @media screen and (max-width: 991px) {
+        &__info {
+            text-align: center;
+        }
+    }
+}

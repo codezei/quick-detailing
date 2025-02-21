@@ -1,0 +1,55 @@
+.faq {
+
+    &__item {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #191919;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+      }
+      &__item:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+      &__item-header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__item-header:after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9 5.4375C12.3648 5.4375 12.775 5.84766 12.775 6.3125V7.1875C12.775 7.67969 12.3648 8.0625 11.9 8.0625H7.96247V12C7.96247 12.4922 7.55231 12.875 7.08747 12.875H6.21247C5.72028 12.875 5.33747 12.4922 5.33747 12V8.0625H1.39997C0.907783 8.0625 0.524971 7.67969 0.524971 7.1875V6.3125C0.524971 5.84766 0.907783 5.4375 1.39997 5.4375H5.33747V1.5C5.33747 1.03516 5.72028 0.625 6.21247 0.625H7.08747C7.55231 0.625 7.96247 1.03516 7.96247 1.5V5.4375H11.9Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        flex-shrink: 0;
+        margin-left: 2rem;
+      }
+      &__item-title {
+        font-weight: 700;
+        margin: 0;
+      }
+      &__item-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 400ms;
+        will-change: max-height;
+      }
+      &__item.active {
+        // background-color: #fff;
+        box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+      }
+      /* &__item.active &__item-title {
+        color: #000;
+      } */
+      &__item.active &__item-content {
+        max-height: 500px;
+        margin-top: 1rem;
+      }
+      &__item.active &__item-header:after {
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='4' viewBox='0 0 13 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9 0.4375C12.3648 0.4375 12.775 0.847656 12.775 1.3125V2.1875C12.775 2.67969 12.3648 3.0625 11.9 3.0625H1.39997C0.907783 3.0625 0.524971 2.67969 0.524971 2.1875V1.3125C0.524971 0.847656 0.907783 0.4375 1.39997 0.4375H11.9Z' fill='white'/%3E%3C/svg%3E%0A");
+      }
+}

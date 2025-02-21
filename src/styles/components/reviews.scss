@@ -1,0 +1,33 @@
+  .reviews {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000 0%, transparent 30%, transparent 70%, #000 100%), url(../img/reviews-bg.jpg);
+    background-size: auto, cover;
+    background-position: center, right center;
+    background-repeat: no-repeat, no-repeat;
+    &__title {
+        text-align: center;
+    }
+    &__row {
+        --bs-gutter-x: 0;
+    }
+  }
+
+  .review {
+    background: #191919;
+    padding: 2rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 100%;
+    &__name {
+        margin: 0;
+    }
+    &__text {
+        line-height: 1.5;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+  }

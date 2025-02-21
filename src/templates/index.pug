@@ -1,0 +1,25 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "";
+  - const themeColor = "#ffffff";
+
+append head
+
+append content
+  include components/header
+  include components/promo
+  include components/about
+  include components/services
+  include components/price
+  include components/works
+  include components/reviews
+  include components/cta
+  include components/faq
+  include components/contacts
+  include components/footer
+
+append scripts

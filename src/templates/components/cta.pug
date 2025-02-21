@@ -1,0 +1,32 @@
+section.cta#cta.block 
+    .container 
+        .row.justify-content-center
+            .col-12.col-md-6 
+                h2.cta__title.text-center.text-uppercase Залишити заявку
+                form.cta__form(action="") 
+                    .row.cta__row 
+                        .col-6 
+                            input.input.cta__input(type="text", placeholder="Ім'я")
+                        .col-6 
+                            input.input.cta__input(type="tel", placeholder="Телефон")
+                        .col-6 
+                            input.input.cta__input(type="text", placeholder="Місто")
+                        .col-6 
+                            input.input.cta__input(type="text", placeholder="Дата")
+                        .col-12 
+                            .cta__labels
+                                label.cta__label.label
+                                    input(type="checkbox", name="work", value="Pranie tapicerki meblowej")
+                                    | Мийка
+                                label.cta__label.label
+                                    input(type="checkbox", name="work", value="Materacy")
+                                    | Хімчистка
+                                label.cta__label.label
+                                    input(type="checkbox", name="work", value="Czyszczenie dywanów")
+                                    | Поліровка
+                                label.cta__label.label
+                                    input(type="checkbox", name="work", value="Czyszczenie w samochodzie")
+                                    | Поклейка плівки
+                        .col-12 
+                            button.btn.cta__btn(type="submit") Записатись 
+                
