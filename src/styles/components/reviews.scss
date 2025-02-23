@@ -10,11 +10,14 @@
     &__row {
         --bs-gutter-x: 0;
     }
+    &__container {
+      --bs-gutter-x: 0;
+  }
   }
 
   .review {
     background: #191919;
-    padding: 2rem;
+    padding: 1rem;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     height: 100%;
@@ -29,5 +32,13 @@
       justify-content: space-between;
       margin-bottom: 1rem;
       align-items: center;
+    }
+
+    @media screen and (min-width: 576px) {
+      padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2rem;
     }
   }

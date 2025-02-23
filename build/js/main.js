@@ -41,6 +41,41 @@
 	  });
 	}
 
+	function about () {
+	  gsap.registerPlugin(ScrollTrigger);
+	  var about = document.querySelector('.about');
+	  var aboutInfo = document.querySelector('.about__info');
+	  var aboutTitle = document.querySelector('.about__title');
+	  var aboutBtn = document.querySelector('.about__btn');
+	  var aboutImg = document.querySelector('.about__img');
+	  var aboutTimeline = gsap.timeline({
+	    scrollTrigger: {
+	      trigger: about,
+	      start: "top 100%"
+	    }
+	  });
+	  aboutTimeline.from(aboutTitle, {
+	    opacity: 0,
+	    y: "-100%",
+	    duration: 0.5,
+	    ease: "power2.inOut"
+	  }).from(aboutInfo, {
+	    opacity: 0,
+	    x: "-100%",
+	    duration: 0.5,
+	    ease: "power2.inOut"
+	  }).from(aboutBtn, {
+	    opacity: 0,
+	    y: "100%",
+	    duration: 0.5,
+	    ease: "power2.inOut"
+	  }).from(aboutImg, {
+	    opacity: 0,
+	    duration: 0.5,
+	    ease: "power2.inOut"
+	  });
+	}
+
 	function parallax () {
 	  gsap.utils.toArray(".parallax-item").forEach(function (item) {
 	    var speed = +item.dataset.speed;
@@ -541,15 +576,65 @@
 	  }
 	}
 
-	document.addEventListener('DOMContentLoaded', function () {
-	  promo(); // about()
+	function services () {
+	  var services = document.querySelector('.services');
+	  var servicesTitle = document.querySelector('.services__title');
+	  var servicesItems = document.querySelectorAll('.service');
+	  var servicesTimeline = gsap.timeline({
+	    scrollTrigger: {
+	      trigger: services,
+	      start: "top 70%"
+	    }
+	  });
+	  servicesTimeline.from(servicesTitle, {
+	    opacity: 0,
+	    y: "-100%",
+	    duration: 0.6,
+	    ease: "power2.out"
+	  }).from(servicesItems, {
+	    opacity: 0,
+	    y: "-50%",
+	    duration: 0.6,
+	    stagger: 0.2,
+	    ease: "power2.out"
+	  }, "-=0.3");
+	}
 
+	function reviews () {
+	  var reviews = document.querySelector('.reviews');
+	  var reviewsTitle = document.querySelector('.reviews__title');
+	  var reviewsItems = document.querySelectorAll('.review');
+	  var reviewsTimeline = gsap.timeline({
+	    scrollTrigger: {
+	      trigger: reviews,
+	      start: "top 70%"
+	    }
+	  });
+	  reviewsTimeline.from(reviewsTitle, {
+	    opacity: 0,
+	    y: "-100%",
+	    duration: 0.6,
+	    ease: "power2.out"
+	  }).from(reviewsItems, {
+	    opacity: 0,
+	    y: "-50%",
+	    duration: 0.6,
+	    stagger: 0.2,
+	    ease: "power2.out"
+	  }, "-=0.3");
+	}
+
+	document.addEventListener('DOMContentLoaded', function () {
+	  promo();
+	  about();
 	  parallax();
 	  faq();
-	  works();
 	  xScroll();
 	  header();
+	  services();
+	  reviews();
 	});
+	works();
 
 }());
 //# sourceMappingURL=main.js.map

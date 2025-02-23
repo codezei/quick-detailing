@@ -17,16 +17,22 @@
     }
     &__info {
         line-height: 1.5;
+        text-align: center;
     }
     &__btn {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+        justify-content: center;
+    }
+    &__img {
+        position: relative;
+        z-index: 1;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 992px) {
         &__info {
-            text-align: center;
+            text-align: left;
         }
     }
 }

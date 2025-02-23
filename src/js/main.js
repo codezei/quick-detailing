@@ -5,15 +5,18 @@ import faq from './modules/faq'
 import works from './modules/works'
 import xScroll from './modules/x-scroll'
 import header from './modules/header'
+import services from './modules/services'
+import reviews from './modules/reviews'
 
 document.addEventListener('DOMContentLoaded', function () {
 	promo()
-	// about()
+	about()
 	parallax()
 	faq()
-    works()
     xScroll()
 	header()
+	services()
+	reviews()
 })
-
+works()
 

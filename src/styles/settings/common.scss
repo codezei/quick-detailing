@@ -203,3 +203,13 @@ br {
 .bounce {
   animation: bounce 1s infinite;
 }
+
+.section {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  &__inner {
+      width: 100%;
+  }
+}
