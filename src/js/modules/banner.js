@@ -8,10 +8,8 @@ export default function () {
         const observer = new IntersectionObserver(entries => {
             const isVisible = entries.some(entry => entry.isIntersecting);
             if (isVisible) {
-                console.log('1')
                 banner.classList.add('hidden')
             } else {
-                console.log('2')
                 banner.classList.remove('hidden')
             }
         }, { threshold: 0.1 });

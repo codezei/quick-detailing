@@ -637,10 +637,8 @@
 	      });
 
 	      if (isVisible) {
-	        console.log('1');
 	        banner.classList.add('hidden');
 	      } else {
-	        console.log('2');
 	        banner.classList.remove('hidden');
 	      }
 	    }, {
@@ -669,4 +667,3 @@
 	works();
 
 }());
-//# sourceMappingURL=main.js.map
