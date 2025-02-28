@@ -624,6 +624,37 @@
 	  }, "-=0.3");
 	}
 
+	function banner () {
+	  function createObserver(blockClasses) {
+	    var banner = document.querySelector('.banner');
+	    if (!banner) return;
+	    var blocks = blockClasses.map(function (cls) {
+	      return document.querySelector(cls);
+	    }).filter(Boolean);
+	    var observer = new IntersectionObserver(function (entries) {
+	      var isVisible = entries.some(function (entry) {
+	        return entry.isIntersecting;
+	      });
+
+	      if (isVisible) {
+	        console.log('1');
+	        banner.classList.add('hidden');
+	      } else {
+	        console.log('2');
+	        banner.classList.remove('hidden');
+	      }
+	    }, {
+	      threshold: 0.1
+	    });
+	    blocks.forEach(function (block) {
+	      return observer.observe(block);
+	    });
+	  }
+
+	  var blockClasses = ['.footer', '.promo'];
+	  createObserver(blockClasses);
+	}
+
 	document.addEventListener('DOMContentLoaded', function () {
 	  promo();
 	  about();
@@ -633,6 +664,7 @@
 	  header();
 	  services();
 	  reviews();
+	  banner();
 	});
 	works();
 

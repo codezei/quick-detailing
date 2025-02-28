@@ -1,0 +1,72 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="7.5" x2="36" y2="296.79"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="396.56" y1="296.79" x2="286" y2="296.79"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="476" y1="7.5" x2="476" y2="296.786"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="175.08" y1="7.5" x2="0" y2="7.5"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="55.714" x2="0" y2="55.714"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="103.929" x2="0" y2="103.929"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="152.143" x2="0" y2="152.143"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="200.357" x2="0" y2="200.357"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="36" y1="248.571" x2="0" y2="248.571"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="226" y1="296.786" x2="0" y2="296.786"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="55.714" x2="476" y2="55.714"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="103.929" x2="476" y2="103.929"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="152.143" x2="476" y2="152.143"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="200.357" x2="476" y2="200.357"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="248.571" x2="476" y2="248.571"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="296.786" x2="411.56" y2="296.786"/>
+		<polyline style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" points="286,254.85 396,254.85 396,167.85 &#10;&#9;&#9;&#9;116,167.85 116,254.85 226,254.85 &#9;&#9;"/>
+		<path style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" d="M286,230.824c0-16.569-13.431-30-30-30&#10;&#9;&#9;&#9;s-30,13.431-30,30v132.431h60V230.824z"/>
+		<polyline style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" points="278.5,512 278.5,363.255 &#10;&#9;&#9;&#9;233.5,363.255 233.5,512 &#9;&#9;"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="404.064" cy="106.411" r="15"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="455.289" cy="347.986" r="15"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="226" cy="55.714" r="15"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="244.554" cy="119.414" r="15"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="120.815" cy="418.754" r="15"/>
+		<path style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" d="M335.98,90.91c10.75-1.55,19-10.79,19-21.96&#10;&#9;&#9;&#9;c0-12.26-9.93-22.19-22.19-22.19c-12.26,0-22.19,9.93-22.19,22.19c0,3.54,0.83,6.88,2.31,9.85"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="316.097" cy="100.759" r="22.192"/>
+		<path style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" d="M116.89,103.44c-3.26,1.9-7.04,2.97-11.07,2.97&#10;&#9;&#9;&#9;c-12.26,0-22.2-9.93-22.2-22.19s9.94-22.19,22.2-22.19c10.09,0,18.62,6.74,21.3,15.97"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="138.192" cy="97.222" r="22.192"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="160.384" cy="363.255" r="22.192"/>
+		<circle style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" cx="371.177" cy="380.874" r="32.887"/>
+		<path style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" d="M111.82,62.85c0-0.27-0.01-0.54-0.01-0.82&#10;&#9;&#9;&#9;c0-12.26,9.94-22.2,22.19-22.2c12.26,0,22.19,9.94,22.19,22.2c0,6.29-2.62,11.98-6.84,16.02"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="512" y1="7.5" x2="190.08" y2="7.5"/>
+	</g>
+	<g>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="256" y1="259.54" x2="256" y2="274.54"/>
+		<line style="fill:none;stroke:#ffffff;stroke-width:15;stroke-miterlimit:10;" x1="256" y1="289.54" x2="256" y2="304.54"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

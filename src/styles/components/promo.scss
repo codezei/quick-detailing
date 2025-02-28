@@ -8,7 +8,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: linear-gradient(to bottom, #000 0%, transparent 30%, transparent 70%, #000 100%), url(../img/grid-bg.svg);
+        background: linear-gradient(to bottom, #000 0%, transparent 30%, transparent 70%, #000 100%), url(../img/grid-bg.png);
         background-repeat: no-repeat, no-repeat;
         background-position: center, right top;
         z-index: -1;
@@ -38,6 +38,7 @@
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 2;
         a {
             color: inherit;
             display: inline-block;

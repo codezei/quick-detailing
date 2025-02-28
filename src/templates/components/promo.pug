@@ -17,7 +17,9 @@ section.promo#promo.section.block
                 .col-12.col-lg-6 
                     .promo__car
                         .car 
-                            img.car__img(src="img/promo-car.jpg", alt="")
+                            picture.car__img
+                                source(srcset="img/promo-car.webp", type="image/webp")
+                                img(src="img/promo-car.jpg", alt="")
                             .car__navbar 
                                 .car-navbar
                                     .car-navbar__item 

@@ -9,21 +9,22 @@
   <title>Profesjonalny detailing samochodowy w Poznaniu - kompleksowe usługi czyszczenia i pielęgnacji</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-
-</html>
-
-<body>
   <header class="header">
     <div class="container">
+      <div class="header__top">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto"> Polska, Poznań</div>
+          <div class="col-auto"> <a class="link" href="tel:+48791131986"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+              </svg>+48 791 131 986 </a></div>
+        </div>
+      </div>
       <div class="header__inner">
         <div class="header__menu">
           <nav class="menu"> <a class="menu__item" href="#about">O nas</a><a class="menu__item" href="#services">Usługi</a><a class="menu__item" href="#price">Ceny</a></nav>
         </div>
-        <div class="header__logo"> <a class="logo" href=""> <img src="img/logo.png" alt="">Detailing<span>Pro</span></a></div>
+        <div class="header__logo"> <a class="logo" href=""> <img src="img/logo.png" alt="" width="70" height="31">Detailing<span>Pro</span></a></div>
         <div class="header__menu">
           <nav class="menu"> <a class="menu__item" href="#reviews">Opinie</a><a class="menu__item" href="#works">Prace</a><a class="menu__item" href="#contacts">Kontakt</a></nav>
         </div>
@@ -48,7 +49,9 @@
           </div>
           <div class="col-12 col-lg-6">
             <div class="promo__car">
-              <div class="car"> <img class="car__img" src="img/promo-car.jpg" alt="">
+              <div class="car">
+                <picture class="car__img">
+                  <source srcset="img/promo-car.webp" type="image/webp"><img src="img/promo-car.jpg" alt=""></picture>
                 <div class="car__navbar">
                   <div class="car-navbar">
                     <div class="car-navbar__item"> <img src="img/wash-icon.svg" alt=""></div>
@@ -74,7 +77,10 @@
           <h2 class="about__title text-center text-uppercase">O nas</h2>
         </div>
         <div class="col-lg-6 col-xl-7"></div>
-        <div class="col-12 col-lg-6 col-xl-5"> <img class="about__img" src="img/car-wash.svg" alt=""></div>
+        <div class="col-12 col-lg-6 col-xl-5">
+          <picture>
+            <source srcset="img/car-wash.webp" type="image/webp"><img class="about__img" src="img/car-wash.png" alt=""></picture>
+        </div>
         <div class="col-12 col-lg-6 col-xl-7">
           <div class="about__info">
             <p>Stworzyliśmy swoją markę i zdobyliśmy nienaganną reputację, zaczynając od czyszczenia mebli tapicerowanych. Dziś, po latach ciężkiej pracy, doskonale znamy się na tym, jak doprowadzić do perfekcji każdą powierzchnię. Nasi stali klienci już się o tym przekonali: początkowo powierzyli nam swoje domy, a teraz powierzają również swoje samochody.</p>
@@ -99,7 +105,9 @@
             <div class="col js-scroll-x-item">
               <div class="service">
                 <div class="service__inner">
-                  <div class="service__front"><img class="service__img" src="img/service-img-1.jpg" alt="">
+                  <div class="service__front">
+                    <picture>
+                      <source srcset="img/service-img-1.webp" type="image/webp"><img class="service__img" src="img/service-img-1.jpg" alt=""></picture>
                     <div class="service__title">Czyszczenie wnętrza<br>(wyjazdowe/stacjonarne)</div>
                   </div>
                   <div class="service__back">
@@ -111,7 +119,9 @@
             <div class="col js-scroll-x-item">
               <div class="service">
                 <div class="service__inner">
-                  <div class="service__front"><img class="service__img" src="img/service-img-2.jpg" alt="">
+                  <div class="service__front">
+                    <picture>
+                      <source srcset="img/service-img-2.webp" type="image/webp"><img class="service__img" src="img/service-img-2.jpg" alt=""></picture>
                     <div class="service__title">Mycie<br>(wyjazdowe/stacjonarne)</div>
                   </div>
                   <div class="service__back">
@@ -123,7 +133,9 @@
             <div class="col js-scroll-x-item">
               <div class="service">
                 <div class="service__inner">
-                  <div class="service__front"><img class="service__img" src="img/service-img-3.jpg" alt="">
+                  <div class="service__front">
+                    <picture>
+                      <source srcset="img/service-img-3.webp" type="image/webp"><img class="service__img" src="img/service-img-3.jpg" alt=""></picture>
                     <div class="service__title">Polerowanie reflektorów</div>
                   </div>
                   <div class="service__back">
@@ -135,7 +147,9 @@
             <div class="col js-scroll-x-item">
               <div class="service">
                 <div class="service__inner">
-                  <div class="service__front"><img class="service__img" src="img/service-img-4.jpg" alt="">
+                  <div class="service__front">
+                    <picture>
+                      <source srcset="img/service-img-4.webp" type="image/webp"><img class="service__img" src="img/service-img-4.jpg" alt=""></picture>
                     <div class="service__title">Polerowanie nadwozia</div>
                   </div>
                   <div class="service__back">
@@ -147,7 +161,9 @@
             <div class="col js-scroll-x-item">
               <div class="service">
                 <div class="service__inner">
-                  <div class="service__front"><img class="service__img" src="img/service-img-5.jpg" alt="">
+                  <div class="service__front">
+                    <picture>
+                      <source srcset="img/service-img-5.webp" type="image/webp"><img class="service__img" src="img/service-img-5.jpg" alt=""></picture>
                     <div class="service__title">Naklejanie folii</div>
                   </div>
                   <div class="service__back">
@@ -163,6 +179,14 @@
       </div>
     </div>
   </section>
+  <div class="banner">
+    <div class="container">
+      <div>A jeśli potrzebujesz czyszczenia chemicznego mebli tapicerowanych lub dywanów, polecamy nasz oddział <a class="banner__link text-uppercase" href="https://quickclean-poznan.pl/" target="_blank"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"></path>
+            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"></path>
+          </svg>Quick Clean</a></div>
+    </div>
+  </div>
   <section class="price block" id="price">
     <div class="container">
       <h2 class="price__title text-uppercase">Ceny</h2>
@@ -276,36 +300,108 @@
       <h2 class="works__title text-center text-uppercase">Prace</h2>
       <div class="row works__row">
         <div class="col-3 works__col">
-          <div class="work"><img src="img/work-img-1.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-2.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-3.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-4.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-5.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-6.jpg" alt=""></div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-1.webp" type="image/webp"><img src="img/work-img-1.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-2.webp" type="image/webp"><img src="img/work-img-2.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-3.webp" type="image/webp"><img src="img/work-img-3.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-4.webp" type="image/webp"><img src="img/work-img-4.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-5.webp" type="image/webp"><img src="img/work-img-5.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-6.webp" type="image/webp"><img src="img/work-img-6.jpg" alt=""></picture>
+          </div>
         </div>
         <div class="col-3 works__col">
-          <div class="work"><img src="img/work-img-7.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-8.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-9.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-10.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-11.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-1.jpg" alt=""></div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-7.webp" type="image/webp"><img src="img/work-img-7.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-8.webp" type="image/webp"><img src="img/work-img-8.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-9.webp" type="image/webp"><img src="img/work-img-9.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-10.webp" type="image/webp"><img src="img/work-img-10.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-11.webp" type="image/webp"><img src="img/work-img-11.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-1.webp" type="image/webp"><img src="img/work-img-1.jpg" alt=""></picture>
+          </div>
         </div>
         <div class="col-3 works__col">
-          <div class="work"><img src="img/work-img-2.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-3.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-4.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-5.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-6.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-7.jpg" alt=""></div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-2.webp" type="image/webp"><img src="img/work-img-2.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-3.webp" type="image/webp"><img src="img/work-img-3.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-4.webp" type="image/webp"><img src="img/work-img-4.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-5.webp" type="image/webp"><img src="img/work-img-5.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-6.webp" type="image/webp"><img src="img/work-img-6.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-7.webp" type="image/webp"><img src="img/work-img-7.jpg" alt=""></picture>
+          </div>
         </div>
         <div class="col-3 works__col">
-          <div class="work"><img src="img/work-img-8.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-9.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-10.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-11.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-1.jpg" alt=""></div>
-          <div class="work"><img src="img/work-img-2.jpg" alt=""></div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-8.webp" type="image/webp"><img src="img/work-img-8.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-9.webp" type="image/webp"><img src="img/work-img-9.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-10.webp" type="image/webp"><img src="img/work-img-10.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-11.webp" type="image/webp"><img src="img/work-img-11.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-1.webp" type="image/webp"><img src="img/work-img-1.jpg" alt=""></picture>
+          </div>
+          <div class="work">
+            <picture>
+              <source srcset="img/work-img-2.webp" type="image/webp"><img src="img/work-img-2.jpg" alt=""></picture>
+          </div>
         </div>
       </div>
     </div>
@@ -313,7 +409,7 @@
   <section class="reviews block section js-scroll-x-wrapper" id="reviews">
     <div class="section__inner">
       <div class="container-fluid reviews__container">
-        <h2 class="reviews__title title">Opinie</h2>
+        <h2 class="reviews__title text-uppercase">Opinie</h2>
         <div class="js-scroll-x-section">
           <div class="row flex-nowrap reviews__row">
             <div class="col-8 col-sm-10 col-md-8 col-lg-6 col-xl-4 js-scroll-x-item">
@@ -528,4 +624,6 @@
   <script src="js/gsap.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/main.js"></script>
-</body>
+</head>
+
+</html>

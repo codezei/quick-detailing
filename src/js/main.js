@@ -7,6 +7,7 @@ import xScroll from './modules/x-scroll'
 import header from './modules/header'
 import services from './modules/services'
 import reviews from './modules/reviews'
+import banner from './modules/banner'
 
 document.addEventListener('DOMContentLoaded', function () {
 	promo()
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	header()
 	services()
 	reviews()
+	banner()
 })
 works()
 

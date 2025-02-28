@@ -27,6 +27,7 @@
         transform-style: preserve-3d;
         height: 100%;
         width: 100%;
+        min-height: 350px;
     }
     &:hover &__inner {
         transform: rotateY(180deg);
