@@ -8,6 +8,7 @@
 	  var promoBtn = document.querySelector('.promo__btn');
 	  var promoCar = document.querySelector('.promo__car');
 	  var promoBg = document.querySelector('.promo__bg');
+	  var promoCta = document.querySelector('.promo__cta');
 	  var promoServices = document.querySelectorAll('.car-navbar__item');
 	  promoTimeline.from(promoCar, {
 	    x: "100%",
@@ -36,6 +37,9 @@
 	    duration: 0.1,
 	    ease: "power2.in"
 	  }).from(promoBg, {
+	    opacity: 0,
+	    duration: 1
+	  }).from(promoCta, {
 	    opacity: 0,
 	    duration: 1
 	  });
@@ -667,3 +671,4 @@
 	works();
 
 }());
+//# sourceMappingURL=main.js.map

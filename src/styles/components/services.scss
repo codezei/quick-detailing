@@ -17,6 +17,9 @@
     &__title {
         position: relative;
     }
+    &__description {
+        font-size: 0.9em;
+    }
 }
 
 .service {
@@ -27,7 +30,7 @@
         transform-style: preserve-3d;
         height: 100%;
         width: 100%;
-        min-height: 350px;
+        min-height: 250px;
     }
     &:hover &__inner {
         transform: rotateY(180deg);
@@ -88,12 +91,15 @@
         &__back {
             padding: 1.5rem;
         }
+        &__inner {
+            min-height: 350px;
+        }
         
-      }
-      
-      @media screen and (min-width: 768px) {
-       &__back {
-        padding: 2rem;
-       }
-      }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__back {
+            padding: 2rem;
+        }
+    }
 }

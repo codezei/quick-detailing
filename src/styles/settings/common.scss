@@ -63,12 +63,13 @@ h6, .h6 {
 }
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.3;
   background: #000;
   color: #fff;
   font-weight: 300;
   overflow-x: hidden;
+
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald';
@@ -79,6 +80,10 @@ h1, h2, h3, h4, h5, h6 {
 
 html{
   overflow-x: hidden;
+  font-size: 14px;
+  @media screen and (min-width: 576px) {
+    font-size: 16px;
+  }
 }
 
 img {
@@ -155,6 +160,9 @@ br {
     border: none;
     cursor: pointer;
     color: inherit;
+  }
+  &-small {
+    padding: 0.5rem;
   }
 }
 
