@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "regenerator-runtime": "^0.14.1",
     "swiper": "^11.1.14"
   },
   "resolutions": {

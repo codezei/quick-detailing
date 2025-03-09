@@ -8,6 +8,8 @@ import header from './modules/header'
 import services from './modules/services'
 import reviews from './modules/reviews'
 import banner from './modules/banner'
+import cta from './modules/cta'
+import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
 	promo()
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	services()
 	reviews()
 	banner()
+	cta()
 })
 works()
 
