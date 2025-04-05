@@ -10,26 +10,20 @@ section.cta#cta.block
                         .col-6 
                             input.input.cta__input(type="tel", placeholder="Telefon", name="phone")
                         .col-6 
-                            input.input.cta__input(type="text", placeholder="Miasto", name="city")
+                            input.input.cta__input(type="text", placeholder="Miasto (jeśli usługa jest na miejscu)", name="city")
                         .col-6 
                             input.input.cta__input(type="text", placeholder="Data", name="date")
                         .col-12 
                             .cta__labels
                                 label.cta__label.label
-                                    input(type="checkbox", name="work", value="Pranie tapicerki meblowej")
-                                    | Express
+                                    input(type="radio", name="work", value="Pakiet Standard")
+                                    | Pakiet “Standard”
                                 label.cta__label.label
-                                    input(type="checkbox", name="work", value="Materacy")
-                                    | Podstawowy
+                                    input(type="radio", name="work", value="Pakiet Platinum")
+                                    | Pakiet “Platinum”
                                 label.cta__label.label
-                                    input(type="checkbox", name="work", value="Czyszczenie dywanów")
-                                    | Srebrny
-                                label.cta__label.label
-                                    input(type="checkbox", name="work", value="Czyszczenie w samochodzie")
-                                    | Złoty
-                                label.cta__label.label
-                                    input(type="checkbox", name="work", value="Czyszczenie w samochodzie")
-                                    | Premium Max
+                                    input(type="radio", name="work", value="Usługi etapowe")
+                                    | Usługi etapowe
                         .col-12 
                             button.btn.cta__btn(type="submit") Zarejestrować się 
                 

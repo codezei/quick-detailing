@@ -1,167 +1,136 @@
 section#price.price.block
+    svg(style="display: none;")
+        symbol#icon-cash(viewBox="0 0 16 16" fill="currentColor")
+            path(d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z")
     .container
         h2.price__title.text-uppercase Ceny
         .price-table
-            h5.price-table__title Usługi kompleksowe:
             .row.price-table__row 
-                .col-12.col-md-6.col-xl-4.price-table__col
+                .col-12 
+                    h3 Pakiety kompleksowe:
+                .col-12.col-md-6.price-table__col
+                    h5.price-table__title Pakiet “Standard”
                     .price-item
-                        .price-item__name Pełny detailing (zewnętrzny i wewnętrzny)
-                        .price-item__value 800-1200 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
+                        p 
+                            svg.icon(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                path(d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16")
+                                path(d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0")
+                            | Obejmuje czyszczenie przednich foteli, tylnej kanapy, paneli bocznych, zagłówków, podłokietników, odkurzanie i pranie podłogi oraz bagażnika, a także czyszczenie dywaników.
+                        p 
+                            svg.icon(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                path(d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z")
+                                path(d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z")
+                                path(d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5")
+                            |  3–4 godziny
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")                              
+                            | około 319 zł
+                .col-12.col-md-6.price-table__col
+                    h5.price-table__title Pakiet “Platinum”
                     .price-item
-                        .price-item__name Polerowanie nadwozia + ochrona
-                        .price-item__value 600-900 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Antybakteryjne czyszczenie wnętrza
-                        .price-item__value 250-400 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Czyszczenie silnika i felg
-                        .price-item__value 200-300 zł
-            h5.price-table__title Usługi pojedyncze:
+                        p 
+                            svg.icon(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                path(d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16")
+                                path(d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0")
+                            | Obejmuje wszystkie usługi z pakietu “Standard” oraz czyszczenie podsufitki, suszenie auta, mycie szyb i czyszczenie elementów plastikowych.
+                        p 
+                            svg.icon(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                path(d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z")
+                                path(d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z")
+                                path(d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5")
+                            |  8–10 godzin
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")                            
+                            | około 459 zł
             .row.price-table__row 
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Mycie nadwozia (ręczne)
-                        .price-item__value 70-120 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Polerowanie nadwozia
-                        .price-item__value 350-550 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Czyszczenie wnętrza (detailing wewnętrzny)
-                        .price-item__value 200-400 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Pranie fotelików dziecięcych
-                        .price-item__value 100-180 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Pranie siedzeń (tkanina)
-                        .price-item__value 180-300 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Pranie siedzeń (skóra)
-                        .price-item__value 250-400 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Polerowanie reflektorów
-                        .price-item__value 120-180 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Aplikacja ochrony ceramicznej
-                        .price-item__value 600-1100 zł
-            h5.price-table__title Dodatkowe usługi:
-            .row.price-table__row 
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Ochrona wnętrza (powłoka ochronna na tapicerkę)
-                        .price-item__value 150-250 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Pranie dywaników samochodowych
-                        .price-item__value 80-150 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Czyszczenie tapicerki materiałowej (głębokie czyszczenie)
-                        .price-item__value 200-350 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Usuwanie zapachów (ozonowanie)
-                        .price-item__value 100-200 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Czyszczenie klimatyzacji (dezynfekcja)
-                        .price-item__value 150-250 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Polerowanie elementów plastikowych i gumowych
-                        .price-item__value 100-150 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Woskowanie nadwozia
-                        .price-item__value 250-400 zł
-                .col-12.col-md-6.col-xl-4.price-table__col
-                    .price-item
-                        .price-item__name Czyszczenie szyb i lusterek (wewnętrzne i zewnętrzne)
-                        .price-item__value 50-80 zł
-        p Po wielu latach doświadczenia w branży czyszczenia samochodów opracowaliśmy optymalny system pakietów usługowych, który uwzględnia podstawowe potrzeby klientów i zapewnia najlepszy efekt. Zamiast zamawiać pojedyncze usługi, oferujemy kompleksowe pakiety, które obejmują starannie dobrane etapy pielęgnacji samochodu. Takie podejście pozwala zaoszczędzić czas, upraszcza proces wyboru i gwarantuje wysoką jakość obsługi. Każdy pakiet jest dostosowany do różnych poziomów potrzeb — od szybkiego podstawowego czyszczenia po pełny premium detailing.
-        .price-table
-            .row.price-table__row 
-                .col-12.col-xl-6.price-table__col
-                    h5.price-table__title Pakiet „Express” (250–300 zł)
-                    .price-item
-                        h6 Usługi podstawowe:
-                        ul 
-                            li Szybkie mycie zewnętrzne karoserii
-                            li Krótka kontrola i lekkie czyszczenie wnętrza (odkurzanie siedzeń oraz dywaników)
-                            li Przetrzycie deski rozdzielczej i elementów plastikowych
-                        h6 Zalety:
-                            ul 
-                                li Idealny dla osób, które się spieszą i chcą szybko uporządkować swój samochód
-                .col-12.col-xl-6.price-table__col
-                    h5.price-table__title Pakiet „Podstawowy” (300–350 zł)
-                    .price-item
-                        h6 Usługi podstawowe:
-                        ul  
-                            li Pełne mycie zewnętrzne karoserii z czyszczeniem felg
-                        h6 Standardowe czyszczenie wnętrza, w tym:
-                        ul 
-                            li Pranie dywaników i wykładzin
-                            li Czyszczenie elementów plastikowych
-                            li Usuwanie kurzu z powierzchni
-                            li Mycie szyb
-                            li Przetrzycie paneli drzwiowych i innych elementów wnętrza
-                        h6 Zalety:
-                            ul 
-                                li Kompleksowe rozwiązanie do regularnej pielęgnacji samochodu
-                .col-12.col-xl-6.price-table__col
-                    h5.price-table__title Pakiet „Srebrny” (450–500 zł)
-                    .price-item
-                        h6 Usługi podstawowe:
-                        ul 
-                            li Dokładne mycie zewnętrzne z precyzyjnym czyszczeniem felg i opon
-                            li Kompleksowe czyszczenie wnętrza z użyciem specjalistycznych środków (odkurzanie, mycie na mokro)
-                            li Pranie i suszenie wykładzin oraz elementów tapicerki
-                            li Czyszczenie, pielęgnacja oraz konserwacja powierzchni plastikowych, skórzanych i tekstylnych
-                            li W razie potrzeby – podstawowe czyszczenie silnika
-                        h6 Zalety:
-                        ul 
-                            li Zaawansowana pielęgnacja dla dokładnego usunięcia zabrudzeń i utrzymania doskonałego wyglądu
-                .col-12.col-xl-6.price-table__col
-                    h5.price-table__title Pakiet „Złoty” (550–600 zł)
-                    .price-item
-                        h6 Usługi podstawowe:
-                        ul 
-                            li Wszystkie procedury z pakietu „Srebrny”
-                            li Głębokie polerowanie karoserii w celu usunięcia drobnych zarysowań
-                            li Aplikacja powłoki ochronnej (wosk lub ceramika) dla utrzymania blasku oraz ochrony przed czynnikami zewnętrznymi
-                        h6 Szczegółowe czyszczenie wnętrza z:
-                        ul 
-                            li Praniem i suszeniem wykładzin oraz tapicerki
-                            li Ozonacją wnętrza
-                            li Pielęgnacją i czyszczeniem elementów plastikowych
-                        h6 Zalety:
-                        ul 
-                            li Pakiet dla klientów ceniących premium pielęgnację i długotrwałą ochronę samochodu
-                .col-12.price-table__col
-                    h5.price-table__title  Pakiet „Premium Max” (700–1000 zł)
-                    .price-item
-                        h6 Usługi podstawowe:
-                        ul 
-                            li Kompleksowy detailing: pełne czyszczenie, polerowanie oraz aplikacja wysokiej jakości powłoki ochronnej (np. powłoka ceramiczna)
-                            li Szczegółowe czyszczenie silnika, mycie reflektorów, renowacja optyki
-                        h6 Głębokie czyszczenie wnętrza z użyciem profesjonalnych środków, w tym:
-                        ul 
-                            li Pełna chemiczna czyszczenie wnętrza samochodu
-                            li Odnowienie powierzchni skórzanych i tekstylnych
-                            li Indywidualne podejście z możliwością dodania dodatkowych usług na życzenie (np. dezynfekcja wnętrza, renowacja lakieru)
-                        h6 Zalety:
-                        ul 
-                            li Maksymalna dbałość o każdy szczegół – idealny wybór dla klientów, dla których jakość jest najważniejsza
+                .col-12 
+                    h5.price-table__title Usługi etapowe:
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie przednich foteli i tylnej kanapy:
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            | 120–160 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie paneli bocznych (drzwi):
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            | 20–50 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie podsufitki:
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  około 100 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Odkurzanie wnętrza: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  około 15 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Mycie samochodu z suszeniem i woskowaniem:
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  100–150 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie plastików i elementów wnętrza: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  100–200 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie i impregnacja tapicerki skórzanej: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  200–400 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie wykładziny podłogowej i dywaników:
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |   100–200 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie pasów bezpieczeństwa: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  50–100 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Czyszczenie bagażnika: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  50–150 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Ozonowanie wnętrza (usuwanie zapachów i bakterii):
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  50–100 zł
+                .col-6.col-md-4.col-xxl-3.price-table__col
+                    .price-item 
+                        h6 Pranie i dezynfekcja fotelika dziecięcego: 
+                        p 
+                            svg.icon(width="16" height="16")
+                                use(xlink:href="#icon-cash")  
+                            |  50–100 zł
         .price__btn
             a.btn(href="#cta") Zarejestrować się
             a.btn(href="tel:+48791131986") 

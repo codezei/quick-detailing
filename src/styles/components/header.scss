@@ -35,6 +35,7 @@
         }
         &__inner {
             flex-wrap: wrap;
+            padding: 0.5rem;
         }
         &__menu {
             width: 100%;
@@ -82,6 +83,7 @@
     @media screen and (max-width: 991px) {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 }
 
