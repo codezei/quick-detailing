@@ -1,6 +1,9 @@
 .contacts {
     &__map {
         text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: var(--h2);
     }
 }
 

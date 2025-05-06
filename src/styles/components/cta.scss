@@ -1,4 +1,21 @@
 .cta {
+    background-image: url(../img/contact-us-bg.svg);
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &__title {
+        margin-bottom: var(--h6);
+    }
+    &__subtitle {
+        margin-bottom: var(--h2);
+    }
+    &__inner {
+        backdrop-filter: blur(2px);
+        padding: 1rem;
+        border-radius: 4px;
+    }
     &__row {
         --bs-gutter-x: 0.5rem;
         --bs-gutter-y: 0.5rem;
@@ -23,13 +40,19 @@
 }
 
 .input {
-    border: 1px solid #fff;
-    color: #fff;
+    // border: 1px solid #fff;
+    // color: #fff;
     padding: 0.75rem 1rem;
     display: inline-block;
     background: transparent;
     backdrop-filter: blur(10px);
     max-width: 100%;
+
+
+    background: linear-gradient(45deg, #191919 0%, #000 100%);
+    border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    box-shadow: -1px -1px 1px rgba($color: #fff, $alpha: 0.1);
+    color: #fff;
   }
 
   .label {

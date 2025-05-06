@@ -1,88 +1,152 @@
 section.works.block#works 
     .container
         h2.works__title.text-center.text-uppercase Prace
-        .row.works__row
-            .col-3.works__col
-                .work
-                    picture
-                        source(srcset="img/work-img-1.webp", type="image/webp")
-                        img(src="img/work-img-1.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-2.webp", type="image/webp")
-                        img(src="img/work-img-2.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-3.webp", type="image/webp")
-                        img(src="img/work-img-3.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-11.webp", type="image/webp")
-                        img(src="img/work-img-11.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-5.webp", type="image/webp")
-                        img(src="img/work-img-5.jpg", alt="")
-            .col-3.works__col
-                .work
-                    picture
-                        source(srcset="img/work-img-7.webp", type="image/webp")
-                        img(src="img/work-img-7.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-8.webp", type="image/webp")
-                        img(src="img/work-img-8.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-14.webp", type="image/webp")
-                        img(src="img/work-img-14.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-10.webp", type="image/webp")
-                        img(src="img/work-img-10.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-4.webp", type="image/webp")
-                        img(src="img/work-img-4.jpg", alt="")
-            .col-3.works__col
-                .work
-                    picture
-                        source(srcset="img/work-img-13.webp", type="image/webp")
-                        img(src="img/work-img-13.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-9.webp", type="image/webp")
-                        img(src="img/work-img-9.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-15.webp", type="image/webp")
-                        img(src="img/work-img-15.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-16.webp", type="image/webp")
-                        img(src="img/work-img-16.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-17.webp", type="image/webp")
-                        img(src="img/work-img-17.jpg", alt="")
-            .col-3.works__col
-                .work
-                    picture
-                        source(srcset="img/work-img-19.webp", type="image/webp")
-                        img(src="img/work-img-19.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-6.webp", type="image/webp")
-                        img(src="img/work-img-6.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-12.webp", type="image/webp")
-                        img(src="img/work-img-12.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-18.webp", type="image/webp")
-                        img(src="img/work-img-18.jpg", alt="")
-                .work
-                    picture
-                        source(srcset="img/work-img-1.webp", type="image/webp")
-                        img(src="img/work-img-1.jpg", alt="")
+        .works__categories.categories
+            .categories__item
+                button.btn.btn-dark.btn-small.active.category(type="button", data-slide="0") Czyszczenie wnętrza
+            .categories__item
+                button.btn.btn-dark.btn-small.category(type="button", data-slide="1") Regeneracja skóry
+            .categories__item
+                button.btn.btn-dark.btn-small.category(type="button", data-slide="2") Tuning/renowacja reflektorów
+            .categories__item
+                button.btn.btn-dark.btn-small.category(type="button", data-slide="3") Polerowanie/aplikacja ceramiki
+        .swiper.works-swiper
+            .swiper-wrapper 
+                .swiper-slide
+                    .row.gallery.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-lg-4
+                        a.col(href="img/cleaning/cleaning-img-1.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-1.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-1.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-2.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-2.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-2.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-3.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-3.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-3.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-4.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-4.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-4.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-5.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-5.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-5.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img6.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-6.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-6.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-7.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-7.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-7.jpg", alt="")
+                        a.col(href="img/cleaning/cleaning-img-8.webp") 
+                            picture.work
+                                source(srcset="img/cleaning/cleaning-img-8.webp", type="image/webp")
+                                img.work__img(src="img/cleaning/cleaning-img-8.jpg", alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-lg-4
+                        a.col(href="img/skin/skin-img-1.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-1.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-1.jpg", alt="")
+                        a.col(href="img/skin/skin-img-2.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-2.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-2.jpg", alt="")
+                        a.col(href="img/skin/skin-img-3.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-3.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-3.jpg", alt="")
+                        a.col(href="img/skin/skin-img-4.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-4.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-4.jpg", alt="")
+                        a.col(href="img/skin/skin-img-5.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-5.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-5.jpg", alt="")
+                        a.col(href="img/skin/skin-img-6.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-6.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-6.jpg", alt="")
+                        a.col(href="img/skin/skin-img-7.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-7.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-7.jpg", alt="")
+                        a.col(href="img/skin/skin-img-8.webp") 
+                            picture.work
+                                source(srcset="img/skin/skin-img-8.webp", type="image/webp")
+                                img.work__img(src="img/skin/skin-img-8.jpg", alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-lg-4
+                        a.col(href="img/reflector/reflector-img-1.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-1.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-1.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-2.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-2.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-2.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-3.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-3.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-3.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-4.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-4.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-4.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-5.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-5.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-5.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-6.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-6.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-6.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-7.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-7.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-7.jpg", alt="")
+                        a.col(href="img/reflector/reflector-img-8.webp") 
+                            picture.work
+                                source(srcset="img/reflector/reflector-img-8.webp", type="image/webp")
+                                img.work__img(src="img/reflector/reflector-img-8.jpg", alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-lg-4
+                        a.col(href="img/polishing/polishing-img-1.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-1.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-1.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-2.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-2.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-2.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-3.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-3.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-3.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-4.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-4.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-4.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-5.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-5.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-5.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-6.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-6.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-6.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-7.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-7.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-7.jpg", alt="")
+                        a.col(href="img/polishing/polishing-img-8.webp") 
+                            picture.work
+                                source(srcset="img/polishing/polishing-img-8.webp", type="image/webp")
+                                img.work__img(src="img/polishing/polishing-img-8.jpg", alt="")
+        .works__btn 
+            a.btn.btn-red.btn-large(href="#cta") Umów się

@@ -1,5 +1,6 @@
 export default function () {
     const form = document.querySelector('#cta-form')
+    if (!form) return
     const popup = document.querySelector('.popup')
     const popupMessage = document.querySelector('.popup__message')
     form.addEventListener("submit", async function (e) {

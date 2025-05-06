@@ -2,28 +2,30 @@ section.cta#cta.block
     .container 
         .row.justify-content-center
             .col-12.col-md-6 
-                h2.cta__title.text-center.text-uppercase Złożyć zapytanie
-                form.cta__form#cta-form(method="POST")
-                    .row.cta__row 
-                        .col-6 
-                            input.input.cta__input(type="text", placeholder="Imię", name="name")
-                        .col-6 
-                            input.input.cta__input(type="tel", placeholder="Telefon", name="phone")
-                        .col-6 
-                            input.input.cta__input(type="text", placeholder="Miasto (jeśli usługa jest na miejscu)", name="city")
-                        .col-6 
-                            input.input.cta__input(type="text", placeholder="Data", name="date")
-                        .col-12 
-                            .cta__labels
-                                label.cta__label.label
-                                    input(type="radio", name="work", value="Pakiet Standard")
-                                    | Pakiet “Standard”
-                                label.cta__label.label
-                                    input(type="radio", name="work", value="Pakiet Platinum")
-                                    | Pakiet “Platinum”
-                                label.cta__label.label
-                                    input(type="radio", name="work", value="Usługi etapowe")
-                                    | Usługi etapowe
-                        .col-12 
-                            button.btn.cta__btn(type="submit") Zarejestrować się 
+                .cta__inner
+                    h2.cta__title.text-center.text-uppercase Masz pytania? Napisz do nas!
+                    h3.h6.text-center.cta__subtitle Wypełnij formularz, a skontaktujemy się z Tobą tak szybko, jak to możliwe.
+                    form.cta__form#cta-form(method="POST")
+                        .row.cta__row 
+                            .col-6 
+                                input.input.cta__input(type="text", placeholder="Imię", name="name")
+                            .col-6 
+                                input.input.cta__input(type="tel", placeholder="Telefon", name="phone")
+                            .col-12 
+                                input.input.cta__input(type="text", placeholder="Marka samochodu", name="car")
+                            //- .col-6 
+                            //-     input.input.cta__input(type="text", placeholder="Data", name="date")
+                            //- .col-12 
+                            //-     .cta__labels
+                            //-         label.cta__label.label
+                            //-             input(type="radio", name="work", value="Pakiet Standard")
+                            //-             | Pakiet “Standard”
+                            //-         label.cta__label.label
+                            //-             input(type="radio", name="work", value="Pakiet Platinum")
+                            //-             | Pakiet “Platinum”
+                            //-         label.cta__label.label
+                            //-             input(type="radio", name="work", value="Usługi etapowe")
+                            //-             | Usługi etapowe
+                            .col-12 
+                                button.btn.btn-red.btn-normal.cta__btn(type="submit") Zarejestrować się 
                 

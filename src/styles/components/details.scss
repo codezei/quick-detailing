@@ -1,0 +1,17 @@
+.details {
+    background: linear-gradient(to bottom, transparent 0%, #191919 0%, #000 100%);
+    &-swiper {
+        --swiper-theme-color: #fff;
+        margin-bottom: 0.5rem;
+    }
+
+    &__description {
+        background: linear-gradient(45deg, #191919 0%, #000 100%);
+        border: 1px solid rgba($color: #fff, $alpha: 0.1);
+        box-shadow: -1px -1px 1px rgba($color: #fff, $alpha: 0.1);
+        padding: 1rem;
+        // color: #fff;
+    }
+
+
+}

@@ -1,0 +1,21 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Regeneracja Skóry Samochodowej Poznań - DetailingPro";
+  - const themeColor = "#000000";
+
+append head
+
+append content
+  include components/header
+  main
+    include components/skin/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+  include components/footer
+
+append scripts

@@ -1,26 +1,45 @@
   .reviews {
     overflow: hidden;
-    background: linear-gradient(to bottom, #000 0%, transparent 30%, transparent 70%, #000 100%), url(../img/reviews-bg.webp);
-    background-size: auto, cover;
-    background-position: center, right center;
-    background-repeat: no-repeat, no-repeat;
+
+
+    background: linear-gradient(to bottom, transparent 0%, #191919 20%, #191919 80%, transparent 100%);
     &__title {
         text-align: center;
+        margin-bottom: 0;
     }
-    &__row {
-        --bs-gutter-x: 0;
-    }
-    &__container {
-      --bs-gutter-x: 0;
+    &-swiper {
+      overflow: visible;
+      .swiper-wrapper {
+          height: auto;
+      }
+      .swiper-slide {
+          height: auto;
+      }
   }
+  &__row {
+      --bs-gutter-x: 1rem;
+      --bs-gutter-y: 1rem;
+  }
+  &__navigation {
+    margin-bottom: var(--h2);
+}
   }
 
   .review {
-    background: #191919;
     padding: 1rem;
+
+    background: #191919;
+   
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+
     height: 100%;
+    &__ava {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
     &__name {
         margin: 0;
     }
@@ -30,9 +49,9 @@
     }
     &__header {
       display: flex;
-      justify-content: space-between;
       margin-bottom: 1rem;
       align-items: center;
+      gap: 1rem;
     }
 
     @media screen and (min-width: 576px) {

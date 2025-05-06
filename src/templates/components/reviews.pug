@@ -1,66 +1,96 @@
-section.reviews#reviews.block.section.js-scroll-x-wrapper 
-    .section__inner
-        .container-fluid.reviews__container 
-            h2.reviews__title.text-uppercase Opinie
-            .js-scroll-x-section
-                .row.flex-nowrap.reviews__row
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+section.reviews#reviews.block
+        .container
+            .reviews__navigation 
+                .row.align-items-center.justify-content-between.reviews__row 
+                    .col-auto
+                        h2.reviews__title.text-uppercase Opinie
+                    .col-auto 
+                        .swiper-navigation
+                            .reviews-button-prev.btn.btn-dark.btn-small
+                                svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                            .reviews-button-next.btn.btn-dark.btn-small
+                                svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .swiper.reviews-swiper 
+                .swiper-wrapper
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Janina
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/w-1.jpg", alt="")
+                                div
+                                    h6.review__name Janina
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Wcześniej zamawiałam czyszczenie tapicerki, a rezultat był wspaniały! Kiedy dowiedziałam się, że firma teraz zajmuje się także detailingiem, od razu zapisałam się na czyszczenie wnętrza samochodu. Po zabiegu samochód wygląda jak nowy! Żadnych plam, przyjemny zapach, i to wszystko bez wyjazdu do serwisu – chłopaki przyjechali bezpośrednio do mnie. Bardzo zadowolona!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Nela 
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/w-2.jpg", alt="")
+                                div
+                                    h6.review__name Nela 
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text W wnętrzu było wiele starych plam po kawie i brudzie, szczególnie na siedzeniach. Myślałam, że już nic nie pomoże, ale po czyszczeniu chemicznym samochód wygląda jak po wizycie w salonie! Pracują bardzo starannie, wszystko dokładnie oczyszczone. Polecam!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Maria 
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/w-3.jpg", alt="")
+                                div
+                                    h6.review__name Maria 
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Mycie po prostu super! Bardzo dokładnie umyli nawet te miejsca, które na zwykłych myjniach nigdy nie są czyszczone. Szczególnie podobało mi się, że nadkola i felgi zostały umyte do perfekcji. Bardzo zadowolona z obsługi!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Franciszek
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-1.jpg", alt="")
+                                div
+                                    h6.review__name Franciszek
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Po polerowaniu samochód wygląda lepiej niż w dniu zakupu! Usunięto wszystkie drobne zarysowania, teraz auto błyszczy jak lustro. Cena całkowicie uzasadniona, praca na najwyższym poziomie!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Jan
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-2.jpg", alt="")
+                                div
+                                    h6.review__name Jan
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Zamówiłem polerowanie karoserii przed sprzedażą samochodu i nie żałuję! Auto wygląda na kilka lat młodsze, kupujący docenili zadbany wygląd i szybko znalazłem klienta. Zdecydowanie polecam!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Nataniel 
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-3.jpg", alt="")
+                                div
+                                    h6.review__name Nataniel 
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Reflektory stały się matowe i żółte, przez co światło w nocy było bardzo słabe. Po polerowaniu znów wyglądają jak nowe! Widoczność znacznie się poprawiła, teraz jazda jest znacznie bardziej komfortowa.
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Maks 
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-4.jpg", alt="")
+                                div
+                                    h6.review__name Maks 
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Długo zastanawiałem się, czy warto polerować reflektory, czy lepiej je wymienić. Dobrze, że zdecydowałem się skorzystać z tej usługi! Wyglądają jak nowe z fabryki, a jeszcze zaoszczędziłem pieniądze na nowych reflektorach.
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Albert 
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-5.jpg", alt="")
+                                div
+                                    h6.review__name Albert 
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Zamówiłem naklejenie folii antywulkanicznej na maskę i zderzak. Praca została wykonana szybko i dokładnie, teraz nie martwię się o drobne zarysowania i kamienie na drodze. Bardzo zadowolony!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Marek
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/m-6.jpg", alt="")
+                                div
+                                    h6.review__name Marek
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Po nałożeniu folii samochód wygląda bez zarzutu, a teraz nie boję się o zarysowania. Jakość materiału jest na najwyższym poziomie, wszystko zrobione starannie. Wielkie podziękowania dla fachowców!
-                    .col-8.col-sm-10.col-md-8.col-lg-6.col-xl-4.js-scroll-x-item 
+                    .swiper-slide
                         .review
                             .review__header
-                                h6.review__name Pola
-                                .rating.review__rating(style="--star-rating: 5;") 
+                                img.review__ava(src="img/w-4.jpg", alt="")
+                                div
+                                    h6.review__name Pola
+                                    .rating.review__rating(style="--star-rating: 5;") 
                             p.review__text Wcześniej zamawiałam czyszczenie dywanów w tej firmie, więc kiedy zobaczyłam, że teraz oferują mycie samochodów, postanowiłam spróbować. Bardzo wygodne – nie trzeba nigdzie jechać, przyjechali do mnie na podwórko, wszystko umyli szybko i dokładnie. Auto błyszczy, żadnych smug, a do tego nałożyli wosk! Teraz będę korzystać tylko z ich usług.

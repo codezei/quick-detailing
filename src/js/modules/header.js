@@ -4,12 +4,13 @@ export default function header () {
 
     burger.addEventListener('click', function (e) {
         document.documentElement.classList.toggle('open-menu')
-
+		e.currentTarget.setAttribute('aria-expanded', !(e.currentTarget.getAttribute('aria-expanded') === 'true' ? true : false))
     })
 
     header.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') {
             document.documentElement.classList.remove('open-menu')
+			burger.setAttribute('aria-expanded', !(burger.getAttribute('aria-expanded') === 'true' ? true : false))
         }
     })
 
@@ -48,15 +49,15 @@ export default function header () {
 
 
 
-        gsap.to(".logo span", {
-            opacity: 0.3,
-            duration: 0.1,
-            repeat: 5,
-            yoyo: true,
-            ease: "power1.inOut",
-            onComplete: function() {
-                gsap.to(".logo span", { opacity: 1, duration: 0.5 });
-            }
-        });
+        // gsap.to(".logo span", {
+        //     opacity: 0.3,
+        //     duration: 0.1,
+        //     repeat: 5,
+        //     yoyo: true,
+        //     ease: "power1.inOut",
+        //     onComplete: function() {
+        //         gsap.to(".logo span", { opacity: 1, duration: 0.5 });
+        //     }
+        // });
 	}
 }

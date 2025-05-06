@@ -11,23 +11,27 @@ header.header
                             path(d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2")
                         | +48 791 131 986 
         .header__inner
-            .header__menu 
-                nav.menu 
-                    a.menu__item(href="#about") O nas
-                    a.menu__item(href="#services") Usługi
-                    a.menu__item(href="#price") Ceny
             .header__logo 
-                a.logo(href="") 
+                a.logo(href="index.html#promo") 
                     img(src="img/logo.png", alt="Detailing Pro", width="70", height="31")
                     | Detailing
-                    span Studio
-            .header__menu 
+                    span Pro
+            .header__menu#main-menu 
                 nav.menu 
+                    a.menu__item(href="index.html#about") O nas
+                    a.menu__item(href="index.html#services") Usługi
+                    a.menu__item(href="index.html#price") Ceny
                     a.menu__item(href="#reviews") Opinie
-                    a.menu__item(href="#works") Prace
+                    a.menu__item(href="index.html#works") Prace
                     a.menu__item(href="#contacts") Kontakt
+                .header__menu-socials.text-center
+                    include socials
+                .header__menu-btn.text-center
+                    a.btn.btn-red.btn-large(href="tel:+48791131986") Zadzwoń
+            .header__button
+                a.btn.btn-red.btn-small(href="tel:+48791131986") Zadzwoń
             .header__burger
-                button.js-burger.btn-transparent(type="button", arial-label="Open menu")
+                button.js-burger.btn.btn-transparent(type="button", arial-label="Toggle navigation", aria-expanded="false", aria-controls="main-menu")
                     span.cross 
                         span 
                         span
